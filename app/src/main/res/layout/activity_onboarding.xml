@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="showIndicator"
+            type="Boolean" />
+
+        <variable
+            name="showSwipe"
+            type="Boolean" />
+
+        <variable
+            name="isLastPage"
+            type="Boolean" />
+
+        <variable
+            name="fullContent"
+            type="Boolean" />
+
+        <variable
+            name="onNextPageClicked"
+            type="View.OnClickListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vpOnboarding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toTopOf="@id/frIndicator"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{(showSwipe ?? false) ? View.VISIBLE : View.GONE, default=gone}"
+            app:layout_constraintBottom_toBottomOf="@id/vpOnboarding"
+            app:layout_constraintEnd_toEndOf="@id/vpOnboarding"
+            app:layout_constraintTop_toTopOf="@id/vpOnboarding"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/handswip" />
+
+        <LinearLayout
+            android:id="@+id/frIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="@{(showIndicator ?? true) ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toTopOf="@id/nativeAdView">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_16dp">
+
+                    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                        android:id="@+id/dotIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:dotsColor="@color/dot_unselected"
+                        app:dotsCornerRadius="8dp"
+                        app:dotsSize="8dp"
+                        app:dotsSpacing="4dp"
+                        app:selectedDotColor="@color/primary" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="@{(fullContent ?? false) ? View.GONE : View.VISIBLE}">
+
+                    <TextView
+                        android:id="@+id/tvAction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:onClick="@{onNextPageClicked}"
+                        android:paddingHorizontal="20dp"
+                        android:background="@drawable/bg_round_20_primary"
+                        android:text='@{(isLastPage ?? false) ? @string/onboarding_get_started : @string/next}'
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        tools:text="Next" />
+                </FrameLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+        <com.expeditee.plant.identifier.admob.NativeAdView
+            android:id="@+id/nativeAdView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:adShimmer="@layout/ads_shimmer_large"
+            app:adView="@layout/ads_native_large"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

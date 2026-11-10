@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_text_faq_list_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_16_white"
+                android:drawableStart="@drawable/ic_search_home"
+                android:drawablePadding="10dp"
+                android:hint="@string/search_for_question"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="10dp"
+                android:textColor="@color/text_headline"
+                android:textColorHint="@color/text_body"
+                tools:text="water indoor plants" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_faq_list_clear_search"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center_vertical"
+                android:padding="10dp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_faq_list_matching_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/text_body"
+            android:visibility="gone"
+            tools:text="12 matching results"
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/collection_faq_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="4dp"
+            tools:listitem="@layout/item_faq_list_faq" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

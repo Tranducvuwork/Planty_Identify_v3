@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="260dp"
+    android:layout_height="112dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/bg_result_dialog_card"
+    android:elevation="2dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivHerb"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="10dp"
+        tools:src="@drawable/ic_herbs" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHerbName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxLines="1"
+            android:textColor="#1B1B1B"
+            android:textSize="14sp"
+            tools:text="Diếp cá" />
+
+        <TextView
+            android:id="@+id/tvHerbScientific"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins"
+            android:maxLines="1"
+            android:textColor="#666666"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            tools:text="Houttuynia cordata" />
+
+        <TextView
+            android:id="@+id/tvHerbRegion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxLines="1"
+            android:textColor="#2E7D32"
+            android:textSize="11sp"
+            tools:text="Miền Bắc · Hà Nội" />
+
+        <TextView
+            android:id="@+id/tvHerbNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins"
+            android:maxLines="2"
+            android:textColor="#555555"
+            android:textSize="11sp"
+            tools:text="Rộng khắp cả nước..." />
+    </LinearLayout>
+</LinearLayout>

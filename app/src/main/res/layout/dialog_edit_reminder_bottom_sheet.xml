@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_24dp">
+
+        <View
+            android:id="@+id/viewHandle"
+            android:layout_width="54dp"
+            android:layout_height="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/bg_reminder_handle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEditTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="@string/reminder_edit_reminder"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewHandle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCloseSheet"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_close_camera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewHandle"
+            app:tint="@color/black" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:paddingHorizontal="14dp"
+            android:paddingTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEditTitle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/containerPlant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:padding="16dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvPlantLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:maxLines="1"
+                            android:text="@string/reminder_plant"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:autoSizeMaxTextSize="14sp"
+                            app:autoSizeMinTextSize="10sp"
+                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeTextType="uniform"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/tvSelectPlant"
+                            app:layout_constraintHorizontal_weight="1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvSelectPlant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawablePadding="8dp"
+                            android:focusable="true"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/reminder_select_plant"
+                            android:textColor="@color/reminder_green"
+                            android:textSize="16sp"
+                            app:drawableEndCompat="@drawable/ic_down"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="Sweetgum" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/containerReminderType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/containerPlant"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvReminderTypeLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:text="@string/reminder_remind_me_about"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:autoSizeMaxTextSize="14sp"
+                            app:autoSizeMinTextSize="10sp"
+                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeTextType="uniform"
+                            app:layout_constraintEnd_toStartOf="@id/tvReminderTypeSummary"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvReminderTypeSummary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/reminder_watering"
+                            android:textColor="@color/reminder_green"
+                            android:textSize="14sp"
+                            app:drawableEndCompat="@drawable/ic_down"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="Rotating" />
+
+                        <FrameLayout
+                            android:id="@+id/pickerContainer"
+                            android:layout_width="0dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="@dimen/_24dp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvReminderTypeLabel">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvReminderType"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clipToPadding="false"
+                                android:nestedScrollingEnabled="true"
+                                android:overScrollMode="never"
+                                android:paddingVertical="40dp"
+                                android:paddingBottom="@dimen/_32dp"
+                                android:scrollbars="none" />
+
+                        </FrameLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Repeat Container - FIXED -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/containerRepeat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/containerReminderType"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvRepeatLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:text="@string/reminder_repeat"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:autoSizeMaxTextSize="14sp"
+                            app:autoSizeMinTextSize="10sp"
+                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeTextType="uniform"
+                            app:layout_constraintEnd_toStartOf="@id/tvRepeatSummary"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvRepeatSummary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="6dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/reminder_select"
+                            android:textColor="@color/reminder_green"
+                            android:textSize="14sp"
+                            app:drawableEndCompat="@drawable/ic_down"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/pickerContainerRepeat"
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:paddingHorizontal="16dp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvRepeatSummary">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/bg_corner_8"
+                                android:backgroundTint="#E1EFDC"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.shawnlin.numberpicker.NumberPicker
+                                android:id="@+id/numberPickerRepeatValue"
+                                android:layout_width="@dimen/_60dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/numberPickerRepeatUnit"
+                                app:layout_constraintHorizontal_chainStyle="packed"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:np_dividerThickness="0dp"
+                                app:np_itemSpacing="4dp"
+                                app:np_selectedTextColor="#3D940E"
+                                app:np_selectedTextSize="@dimen/_16sp"
+                                app:np_textColor="#664D4D4D"
+                                app:np_textSize="@dimen/_14sp" />
+
+                            <com.shawnlin.numberpicker.NumberPicker
+                                android:id="@+id/numberPickerRepeatUnit"
+                                android:layout_width="@dimen/_60dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/numberPickerRepeatValue"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:np_dividerThickness="0dp"
+                                app:np_itemSpacing="4dp"
+                                app:np_selectedTextColor="#3D940E"
+                                app:np_selectedTextSize="@dimen/_16sp"
+                                app:np_textColor="#664D4D4D"
+                                app:np_textSize="@dimen/_14sp" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/containerTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/containerRepeat"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvTimeLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:text="@string/reminder_time"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:autoSizeMaxTextSize="14sp"
+                            app:autoSizeMinTextSize="10sp"
+                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeTextType="uniform"
+                            app:layout_constraintEnd_toStartOf="@id/tvTimePicker"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvTimePicker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="6dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="09:30"
+                            android:textColor="@color/reminder_green"
+                            android:textSize="14sp"
+                            app:drawableEndCompat="@drawable/ic_down"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="09:30" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/pickerContainerTime"
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:paddingHorizontal="16dp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvTimeLabel">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/bg_corner_8"
+                                android:backgroundTint="#E1EFDC"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.shawnlin.numberpicker.NumberPicker
+                                android:id="@+id/numberPickerHour"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/numberPickerMinute"
+                                app:layout_constraintHorizontal_chainStyle="packed"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:np_dividerThickness="0dp"
+                                app:np_itemSpacing="4dp"
+                                app:np_selectedTextColor="#3D940E"
+                                app:np_selectedTextSize="@dimen/_16sp"
+                                app:np_textColor="#664D4D4D"
+                                app:np_textSize="@dimen/_14sp" />
+
+                            <com.shawnlin.numberpicker.NumberPicker
+                                android:id="@+id/numberPickerMinute"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/numberPickerHour"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:np_dividerThickness="0dp"
+                                app:np_itemSpacing="4dp"
+                                app:np_selectedTextColor="#3D940E"
+                                app:np_selectedTextSize="@dimen/_16sp"
+                                app:np_textColor="#664D4D4D"
+                                app:np_textSize="@dimen/_14sp" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/containerPreviousFertilizing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="88dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/containerTime"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvPreviousFertilizingLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:text="@string/reminder_previous_fertilizing"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:autoSizeMaxTextSize="14sp"
+                            app:autoSizeMinTextSize="10sp"
+                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeTextType="uniform"
+                            app:layout_constraintEnd_toStartOf="@id/tvPreviousFertilizingSelect"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvPreviousFertilizingSelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawablePadding="6dp"
+                            android:focusable="true"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/reminder_select"
+                            android:textColor="@color/reminder_green"
+                            android:textSize="14sp"
+                            app:drawableEndCompat="@drawable/ic_down"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <FrameLayout
+                            android:id="@+id/pickerContainerPreviousFertilizing"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:minHeight="120dp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvPreviousFertilizingLabel">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvPreviousFertilizing"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clipToPadding="false"
+                                android:overScrollMode="never"
+                                android:paddingVertical="8dp" />
+
+                        </FrameLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTurnOnReminder"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_reminder_badge"
+            android:elevation="4dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/reminder_turn_on"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scrollView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

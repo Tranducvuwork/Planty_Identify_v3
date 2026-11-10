@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id" translatable="false">1336779288311886</string>
+    <string name="facebook_client_token" translatable="false">b4049db0364cd22c86724ec22946d09d</string>
+    <string name="applovin_sdk_key" translatable="false">99</string>
+    <string name="adjust_token" translatable="false">t308fw0qgo3k</string>
+    <string name="adjust_ad_impression" translatable="false">oqov97</string>
+    <string name="adjust_ad_purchase" translatable="false">ovo05d</string>
+</resources>

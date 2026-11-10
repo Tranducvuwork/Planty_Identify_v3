@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_result_dialog_card"
+            android:padding="@dimen/_20dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="Tạo nhật ký trồng cây"
+                android:textColor="@color/result_text_primary"
+                android:textSize="@dimen/_18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Tiêu đề"
+                android:textColor="@color/result_text_primary"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="@dimen/_6dp"
+                android:background="@drawable/bg_result_input"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="Nhật ký Đinh lăng lớp 8A"
+                android:inputType="textCapSentences"
+                android:paddingHorizontal="@dimen/_14dp"
+                android:textColor="@color/result_text_primary"
+                android:textColorHint="@color/result_text_muted"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleLabel" />
+
+            <TextView
+                android:id="@+id/tvPlantLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Tên cây"
+                android:textColor="@color/result_text_primary"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etTitle" />
+
+            <EditText
+                android:id="@+id/etPlant"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="@dimen/_6dp"
+                android:background="@drawable/bg_result_input"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="Đinh lăng"
+                android:inputType="textCapSentences"
+                android:paddingHorizontal="@dimen/_14dp"
+                android:textColor="@color/result_text_primary"
+                android:textColorHint="@color/result_text_muted"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPlantLabel" />
+
+            <TextView
+                android:id="@+id/tvSpecLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Điểm đặc biệt"
+                android:textColor="@color/result_text_primary"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etPlant" />
+
+            <EditText
+                android:id="@+id/etSpecialties"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6dp"
+                android:background="@drawable/bg_result_input"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="top"
+                android:hint="Lá kép, dễ giâm cành, chịu bóng…"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minHeight="72dp"
+                android:paddingHorizontal="@dimen/_14dp"
+                android:paddingVertical="@dimen/_10dp"
+                android:textColor="@color/result_text_primary"
+                android:textColorHint="@color/result_text_muted"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpecLabel" />
+
+            <TextView
+                android:id="@+id/tvNoteLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Ghi chú ngày bắt đầu"
+                android:textColor="@color/result_text_primary"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etSpecialties" />
+
+            <EditText
+                android:id="@+id/etNote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6dp"
+                android:background="@drawable/bg_result_input"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="top"
+                android:hint="Gieo hạt / giâm cành / đặt chậu ban công"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minHeight="72dp"
+                android:paddingHorizontal="@dimen/_14dp"
+                android:paddingVertical="@dimen/_10dp"
+                android:textColor="@color/result_text_primary"
+                android:textColorHint="@color/result_text_muted"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvNoteLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_more_option_white"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="Huỷ"
+                android:textColor="@color/result_green"
+                app:layout_constraintEnd_toStartOf="@id/btnSave"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etNote" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:background="@drawable/bg_more_option_green"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="Lưu"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnCancel"
+                app:layout_constraintTop_toBottomOf="@id/etNote" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PlantyIdentifier" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_background</item>
+        <item name="colorPrimaryVariant">@color/color_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/text_headline</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Theme.PlantyIdentifier" parent="Base.Theme.PlantyIdentifier">
+        <item name="android:windowBackground">@color/color_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:enforceNavigationBarContrast" tools:ignore="NewApi">false</item>
+        <item name="android:enforceStatusBarContrast" tools:ignore="NewApi">false</item>
+    </style>
+
+    <style name="InterstitialFullscreenTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/text_headline</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Common_Kotlin" parent="Base.Theme.PlantyIdentifier">
+        <item name="android:windowBackground">@color/color_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:enforceNavigationBarContrast" tools:ignore="NewApi">false</item>
+        <item name="android:enforceStatusBarContrast" tools:ignore="NewApi">false</item>
+    </style>
+
+    <style name="EditText" parent="Base.Theme.PlantyIdentifier">
+        <item name="colorSecondary">@color/primary</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="AppMaterialCalendar" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/primary_green</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AppMaterialCalendar.ButtonStyle.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AppMaterialCalendar.ButtonStyle.Negative</item>
+    </style>
+
+    <style name="AppMaterialCalendar.ButtonStyle.Positive" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/primary_green</item>
+    </style>
+
+    <style name="AppMaterialCalendar.ButtonStyle.Negative" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+</resources>

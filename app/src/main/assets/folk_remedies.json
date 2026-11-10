@@ -1,0 +1,431 @@
+[
+  {
+    "id": "cam-sa-gung",
+    "title": "Nước sả gừng ấm",
+    "ailment": "Cảm nhẹ, ớn lạnh",
+    "ingredients": [
+      "Sả 1–2 cây",
+      "Gừng tươi 2–3 lát",
+      "Mật ong (tuỳ chọn)",
+      "Nước"
+    ],
+    "method": "Đập sả, thái gừng, đun sôi 10–15 phút. Uống ấm. Thêm mật ong khi nước còn ấm, không quá nóng.",
+    "region": "Phổ biến cả nước",
+    "plants": [
+      "sa",
+      "gung"
+    ],
+    "source_url": "https://duocdienvietnam.com/gung-than-re/",
+    "source_title": "Dược điển Việt Nam — Gừng (Thân rễ)",
+    "caution": "Không thay kháng sinh. Trẻ nhỏ, phụ nữ mang thai hỏi bác sĩ."
+  },
+  {
+    "id": "nghe-tieu",
+    "title": "Nghệ mật ong",
+    "ailment": "Khó tiêu nhẹ",
+    "ingredients": [
+      "Bột nghệ hoặc nghệ tươi",
+      "Mật ong",
+      "Nước ấm"
+    ],
+    "method": "Pha nửa thìa cà phê nghệ với nước ấm và mật ong. Uống sau bữa ăn nhẹ, dùng ngắn hạn.",
+    "region": "Toàn quốc",
+    "plants": [
+      "nghe"
+    ],
+    "source_url": "https://duocdienvietnam.com/nghe-than-re/",
+    "source_title": "Dược điển Việt Nam — Nghệ (Thân rễ)",
+    "caution": "Tránh liều cao kéo dài. Người đau dạ dày nặng cần thận trọng."
+  },
+  {
+    "id": "nha-dam-da",
+    "title": "Gel nha đam đắp ngoài",
+    "ailment": "Bỏng nhẹ, da khô kích ứng",
+    "ingredients": [
+      "Lá nha đam tươi"
+    ],
+    "method": "Rửa sạch, bỏ gai vỏ, lấy gel trong. Đắp 10–15 phút rồi rửa. Không dùng lên vết loét sâu.",
+    "region": "Phổ biến",
+    "plants": [
+      "nha-dam"
+    ],
+    "source_url": "https://duocdienvietnam.com/lo-hoi-nhua/",
+    "source_title": "Dược điển Việt Nam — Lô hội",
+    "caution": "Thử một vùng da nhỏ trước. Dị ứng thì dừng ngay."
+  },
+  {
+    "id": "bac-ha-ho",
+    "title": "Trà bạc hà",
+    "ailment": "Họng khô, khó chịu nhẹ",
+    "ingredients": [
+      "Lá bạc hà",
+      "Nước sôi"
+    ],
+    "method": "Hãm 5–7 phút, uống ấm. Có thể thêm chanh.",
+    "region": "Phổ biến",
+    "plants": [
+      "bac-ha"
+    ],
+    "source_url": "https://duocdienvietnam.com/bac-ha-herba-menthae/",
+    "source_title": "Dược điển Việt Nam — Bạc hà",
+    "caution": "Không dùng tinh dầu bạc hà cho trẻ nhũ nhi."
+  },
+  {
+    "id": "tia-to-cam",
+    "title": "Nước lá tía tô",
+    "ailment": "Cảm nhẹ theo dân gian",
+    "ingredients": [
+      "Lá tía tô",
+      "Nước"
+    ],
+    "method": "Rửa lá, đun sôi 5–10 phút, uống ấm trong ngày.",
+    "region": "Nhiều vùng phía Bắc",
+    "plants": [
+      "tia-to"
+    ],
+    "source_url": "https://duocdienvietnam.com/tia-to-la/",
+    "source_title": "Dược điển Việt Nam — Tía tô (Lá)",
+    "caution": "Không thay thuốc kê đơn."
+  },
+  {
+    "id": "dinh-lang-bo",
+    "title": "Rễ đinh lăng (tham khảo cổ truyền)",
+    "ailment": "Mệt mỏi theo quan niệm dân gian",
+    "ingredients": [
+      "Rễ đinh lăng theo thầy thuốc",
+      "Nước"
+    ],
+    "method": "Sắc uống theo chỉ dẫn thầy thuốc hoặc chuyên luận Dược điển. Không tự chế liều cao.",
+    "region": "Vườn dược liệu",
+    "plants": [
+      "dinh-lang"
+    ],
+    "source_url": "https://duocdienvietnam.com/dinh-lang-re/",
+    "source_title": "Dược điển Việt Nam — Đinh lăng (Rễ)",
+    "caution": "Không tự ý dùng cho trẻ em."
+  },
+  {
+    "id": "la-lot-giam",
+    "title": "Canh lá lốt",
+    "ailment": "Khó chịu tiêu hóa nhẹ",
+    "ingredients": [
+      "Lá lốt",
+      "Gia vị nấu canh"
+    ],
+    "method": "Rửa sạch, nấu canh lượng vừa phải như rau gia vị.",
+    "region": "Phổ biến",
+    "plants": [
+      "la-lot"
+    ],
+    "source_url": "https://duocdienvietnam.com/la-lot/",
+    "source_title": "Dược điển Việt Nam — Lá lốt",
+    "caution": "Thận trọng nếu dị ứng họ hồ tiêu."
+  },
+  {
+    "id": "rau-ma-mat",
+    "title": "Nước rau má",
+    "ailment": "Mát, giải nhiệt dân gian",
+    "ingredients": [
+      "Rau má tươi",
+      "Nước",
+      "Đường phèn (tuỳ chọn)"
+    ],
+    "method": "Rửa sạch, xay hoặc giã lấy nước, lọc uống mát.",
+    "region": "Nam Bộ / nhiều tỉnh",
+    "plants": [
+      "rau-ma"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Người tỳ vị hư hàn, tiêu chảy nên hạn chế."
+  },
+  {
+    "id": "ma-de-loi-tieu",
+    "title": "Nước mã đề",
+    "ailment": "Khó chịu đường tiết niệu nhẹ (dân gian)",
+    "ingredients": [
+      "Lá mã đề",
+      "Nước"
+    ],
+    "method": "Rửa sạch, sắc hoặc hãm uống theo lượng nhỏ. Tham khảo thầy thuốc.",
+    "region": "Phổ biến",
+    "plants": [
+      "ma-de"
+    ],
+    "source_url": "https://duocdienvietnam.com/ma-de-la/",
+    "source_title": "Dược điển Việt Nam — Mã đề (Lá)",
+    "caution": "Không thay kháng sinh khi nhiễm trùng."
+  },
+  {
+    "id": "kinh-gioi-xong",
+    "title": "Xông kinh giới",
+    "ailment": "Cảm nhẹ, ngạt mũi dân gian",
+    "ingredients": [
+      "Cành lá kinh giới",
+      "Nước sôi"
+    ],
+    "method": "Đun sôi, xông hơi ở khoảng cách an toàn 5–10 phút.",
+    "region": "Phổ biến",
+    "plants": [
+      "kinh-gioi"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Tránh bỏng hơi nước. Trẻ nhỏ cần người lớn hỗ trợ."
+  },
+  {
+    "id": "hung-chanh-ho",
+    "title": "Lá húng chanh hấp mật ong",
+    "ailment": "Ho nhẹ dân gian",
+    "ingredients": [
+      "Lá húng chanh",
+      "Mật ong"
+    ],
+    "method": "Rửa lá, hấp hoặc vò lấy nước, hòa mật ong, uống từng ngụm nhỏ.",
+    "region": "Phổ biến",
+    "plants": [
+      "hung-chanh"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Không cho mật ong trẻ dưới 1 tuổi."
+  },
+  {
+    "id": "ngai-cuu-chuom",
+    "title": "Chườm ngải cứu",
+    "ailment": "Đau nhức nhẹ dân gian",
+    "ingredients": [
+      "Lá ngải cứu",
+      "Muối (tuỳ chọn)"
+    ],
+    "method": "Sao nóng lá, bọc vải chườm ngoài da. Không chườm quá nóng.",
+    "region": "Phổ biến",
+    "plants": [
+      "ngai-cuu"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Không chườm lên da tổn thương hở. Phụ nữ có thai hỏi thầy thuốc."
+  },
+  {
+    "id": "la-voi-tra",
+    "title": "Nước lá vối",
+    "ailment": "Uống mát dân gian",
+    "ingredients": [
+      "Lá vối già",
+      "Nước"
+    ],
+    "method": "Sao nhẹ lá, hãm hoặc sắc uống như trà.",
+    "region": "Đồng bằng Bắc Bộ",
+    "plants": [
+      "la-voi"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Uống lượng vừa, không thay thuốc."
+  },
+  {
+    "id": "muop-dang-mat",
+    "title": "Nước mướp đắng",
+    "ailment": "Mát, hỗ trợ dân gian",
+    "ingredients": [
+      "Mướp đắng",
+      "Nước"
+    ],
+    "method": "Nấu canh hoặc ép lấy nước lượng nhỏ.",
+    "region": "Phổ biến",
+    "plants": [
+      "muop-dang"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Người tỳ vị hư hàn, phụ nữ mang thai hỏi bác sĩ."
+  },
+  {
+    "id": "sa-nhan-tieu",
+    "title": "Sa nhân (tham khảo cổ truyền)",
+    "ailment": "Đầy hơi, khó tiêu nhẹ",
+    "ingredients": [
+      "Sa nhân theo thầy thuốc"
+    ],
+    "method": "Dùng theo chuyên luận / thầy thuốc. Không tự ý tăng liều.",
+    "region": "YHCT",
+    "plants": [
+      "sa-nhan"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược điển Việt Nam",
+    "caution": "Chỉ dùng khi có hướng dẫn."
+  },
+  {
+    "id": "que-am",
+    "title": "Nước gừng quế ấm",
+    "ailment": "Ớn lạnh dân gian",
+    "ingredients": [
+      "Gừng",
+      "Quế một ít",
+      "Nước"
+    ],
+    "method": "Đun ấm uống lượng nhỏ. Không dùng quế liều cao.",
+    "region": "Phổ biến",
+    "plants": [
+      "gung",
+      "que"
+    ],
+    "source_url": "https://duocdienvietnam.com/gung-than-re/",
+    "source_title": "Dược điển Việt Nam — Gừng",
+    "caution": "Huyết áp cao, phụ nữ có thai hỏi bác sĩ."
+  },
+  {
+    "id": "diep-ha-chau",
+    "title": "Diệp hạ châu (tham khảo)",
+    "ailment": "Hỗ trợ dân gian",
+    "ingredients": [
+      "Cây diệp hạ châu theo thầy thuốc"
+    ],
+    "method": "Sắc theo chỉ dẫn. Không tự điều trị bệnh gan.",
+    "region": "YHCT",
+    "plants": [
+      "diep-ha-chau"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Bệnh gan / vàng da phải khám bác sĩ."
+  },
+  {
+    "id": "co-nho-noi",
+    "title": "Cỏ nhọ nồi (tham khảo)",
+    "ailment": "Dân gian cầm máu nhẹ ngoài da",
+    "ingredients": [
+      "Cỏ nhọ nồi tươi"
+    ],
+    "method": "Rửa sạch, giã đắp ngoài vết trầy nhẹ. Rửa lại nếu kích ứng.",
+    "region": "Phổ biến",
+    "plants": [
+      "co-nho-noi"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Không đắp vết thương sâu, nhiễm trùng."
+  },
+  {
+    "id": "gung-am-bung",
+    "title": "Nước gừng ấm hỗ trợ đầy bụng",
+    "ailment": "Đau bụng nhẹ / đầy hơi sau ăn",
+    "ingredients": [
+      "Gừng tươi 2–3 lát",
+      "Nước ấm",
+      "Muối hoặc mật ong (tuỳ chọn)"
+    ],
+    "method": "Đun gừng 8–10 phút, uống ấm lượng nhỏ sau ăn. Không dùng thay thuốc đau dạ dày nặng.",
+    "region": "Phổ biến",
+    "plants": [
+      "gung"
+    ],
+    "source_url": "https://duocdienvietnam.com/gung-than-re/",
+    "source_title": "Dược điển Việt Nam — Gừng",
+    "caution": "Loét dạ dày, trào ngược nặng, phụ nữ mang thai hỏi bác sĩ."
+  },
+  {
+    "id": "la-lot-tieu",
+    "title": "Lá lốt hỗ trợ khó tiêu nhẹ",
+    "ailment": "Khó chịu tiêu hóa nhẹ",
+    "ingredients": [
+      "Lá lốt",
+      "Nước"
+    ],
+    "method": "Rửa sạch, có thể nấu canh hoặc sắc uống lượng nhỏ theo kinh nghiệm dân gian.",
+    "region": "Phổ biến",
+    "plants": [
+      "la-lot"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Không thay kháng sinh / thuốc kê đơn."
+  },
+  {
+    "id": "hung-chanh-mui",
+    "title": "Húng chanh xông / uống ấm",
+    "ailment": "Sổ mũi, nghẹt mũi nhẹ",
+    "ingredients": [
+      "Lá húng chanh",
+      "Nước sôi"
+    ],
+    "method": "Hãm uống ấm hoặc xông hơi nhẹ. Không dùng tinh dầu đậm cho trẻ nhỏ.",
+    "region": "Phổ biến",
+    "plants": [
+      "hung-chanh"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Trẻ nhũ nhi không xông tinh dầu đậm."
+  },
+  {
+    "id": "trau-khong-dau",
+    "title": "Nước ấm nghỉ ngơi khi nhức đầu nhẹ",
+    "ailment": "Nhức đầu nhẹ do mệt",
+    "ingredients": [
+      "Nước ấm",
+      "Nghỉ nơi yên tĩnh"
+    ],
+    "method": "Uống nước ấm, nghỉ 15–20 phút, hạn chế màn hình. Nếu đau dữ dội / kèm nôn / cứng gáy: khám ngay.",
+    "region": "Phổ biến",
+    "plants": [
+      "bac-ha"
+    ],
+    "source_url": "https://duocdienvietnam.com/bac-ha-herba-menthae/",
+    "source_title": "Tham khảo chăm sóc hỗ trợ",
+    "caution": "Đau đầu đột ngột dữ dội cần cấp cứu."
+  },
+  {
+    "id": "long-nhan-ngu",
+    "title": "Long nhãn hỗ trợ ngủ nghỉ",
+    "ailment": "Mệt, khó ngủ nhẹ theo dân gian",
+    "ingredients": [
+      "Long nhãn",
+      "Nước"
+    ],
+    "method": "Nấu chè long nhãn lượng nhỏ buổi tối. Không dùng thay thuốc ngủ.",
+    "region": "YHCT dân gian",
+    "plants": [
+      "long-nhan"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Đái tháo đường hỏi bác sĩ vì vị ngọt."
+  },
+  {
+    "id": "gung-xoa-lung",
+    "title": "Gừng ấm xoa ngoài đau mỏi lưng",
+    "ailment": "Đau mỏi lưng nhẹ",
+    "ingredients": [
+      "Gừng tươi",
+      "Dầu ăn hoặc dầu xoa"
+    ],
+    "method": "Nướng/sao ấm gừng, xoa nhẹ vùng đau. Không xoa khi da xây xước.",
+    "region": "Phổ biến",
+    "plants": [
+      "gung"
+    ],
+    "source_url": "https://duocdienvietnam.com/gung-than-re/",
+    "source_title": "Dược điển Việt Nam — Gừng",
+    "caution": "Đau lưng lan chân, tê bì, bí tiểu: khám bác sĩ."
+  },
+  {
+    "id": "la-lot-chuom",
+    "title": "Lá lốt ấm hỗ trợ mỏi",
+    "ailment": "Đau mỏi nhẹ",
+    "ingredients": [
+      "Lá lốt",
+      "Khăn"
+    ],
+    "method": "Hấp ấm lá, chườm ngoài. Chỉ hỗ trợ nhẹ.",
+    "region": "Phổ biến",
+    "plants": [
+      "la-lot"
+    ],
+    "source_url": "https://duocdienvietnam.com/duoc-lieu/",
+    "source_title": "Dược liệu Việt Nam",
+    "caution": "Không thay vật lý trị liệu / khám chuyên khoa."
+  }
+]

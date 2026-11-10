@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp">
+
+    <LinearLayout
+        android:id="@+id/diseaseDescArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/description"
+            android:textColor="#020617"
+            android:textSize="@dimen/_16sp" />
+
+        <com.expeditee.plant.identifier.utils.ReadMoreTextView
+            android:id="@+id/plantDescText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            app:trimLines="4"
+            tools:text="Mint Rust is a fungal disease that primarily affects plants in the mint family..."
+            android:background="@drawable/plant_info_card_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="@dimen/_14dp"
+            android:textColor="@color/text_headline"
+            android:textSize="@dimen/_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diseaseSymptomsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/symptomsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Triệu chứng"
+            android:textColor="#020617"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/symptomsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/plant_info_card_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="3dp"
+            android:padding="@dimen/_14dp"
+            android:textColor="@color/text_headline"
+            android:textSize="13sp"
+            tools:text="• Lá có đốm nâu\n• Mép lá cháy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diseaseCauseArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/causesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Nguyên nhân"
+            android:textColor="#020617"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/causesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/plant_info_card_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="3dp"
+            android:padding="@dimen/_14dp"
+            android:textColor="@color/text_headline"
+            android:textSize="13sp"
+            tools:text="• Lá ẩm lâu\n• Thiếu thông gió" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diseaseVisualArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/visualTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Hình ảnh sâu bệnh &amp; triệu chứng"
+            android:textColor="#020617"
+            android:textSize="@dimen/_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/plant_info_card_shape"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/pestImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_toxic"
+                    tools:src="@tools:sample/backgrounds/scenic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Hình ảnh sâu bệnh"
+                    android:textColor="#020617"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/plant_info_card_shape"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/symptomImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_camera_home"
+                    tools:src="@tools:sample/backgrounds/scenic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Hình ảnh triệu chứng"
+                    android:textColor="#020617"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diseaseCompareArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/compareTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="So sánh cây khỏe – cây bệnh"
+            android:textColor="#020617"
+            android:textSize="@dimen/_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/plant_info_card_shape"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/healthyImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_plant_success" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Cây khỏe"
+                    android:textColor="#1B8F45"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/plant_info_card_shape"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/diseaseCompareImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_camera_home"
+                    tools:src="@tools:sample/backgrounds/scenic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Cây bị bệnh"
+                    android:textColor="#B71C1C"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diseaseTreatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/treatment"
+            android:textColor="#020617"
+            android:textSize="@dimen/_16sp" />
+
+        <LinearLayout
+            android:id="@+id/bioTreatmentArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:background="@drawable/plant_info_card_shape"
+            android:padding="@dimen/_14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/biological"
+                android:textColor="#020617"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/bioTreatmentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/text_headline"
+                android:textSize="13sp"
+                tools:text="@tools:sample/lorem"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chemTreatmentArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12dp"
+            android:background="@drawable/plant_info_card_shape"
+            android:padding="@dimen/_14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/chemical"
+                android:textColor="#020617"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chemTreatmentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/text_headline"
+                android:textSize="13sp"
+                tools:text="@tools:sample/lorem"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/organicSpiceTreatmentArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12dp"
+            android:background="@drawable/plant_info_card_shape"
+            android:orientation="vertical"
+            android:padding="@dimen/_14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/thesis_bio_spice_title"
+                android:textColor="#020617"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/organicSpiceTreatmentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/thesis_bio_spice_recipe"
+                android:textColor="@color/text_headline"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnFindPesticideStore"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:background="@drawable/bg_fertilizer_store_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="@string/thesis_find_pesticide_store"
+            android:textColor="@color/primary_green"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diseasePreventionArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/preventionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Cách phòng"
+            android:textColor="#020617"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/preventionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/plant_info_card_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:lineSpacingExtra="3dp"
+            android:padding="@dimen/_14dp"
+            android:textColor="@color/text_headline"
+            android:textSize="13sp"
+            tools:text="• Tưới gốc\n• Tỉa lá bệnh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/solutionCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/solution"
+            android:textColor="#020617"
+            android:textSize="@dimen/_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/plant_info_card_shape"
+            android:orientation="vertical"
+            android:padding="@dimen/_14dp">
+
+            <TextView
+                android:id="@+id/solutionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="#020617"
+                android:textSize="@dimen/_14sp"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/solutionSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/text_headline"
+                android:textSize="13sp"
+                tools:text="@tools:sample/lorem"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/treatment_steps"
+                android:textColor="#020617"
+                android:textSize="@dimen/_14sp" />
+
+            <TextView
+                android:id="@+id/solutionSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/text_headline"
+                android:textSize="13sp"
+                tools:text="@tools:sample/lorem"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/precautions"
+                android:textColor="#020617"
+                android:textSize="@dimen/_14sp" />
+
+            <TextView
+                android:id="@+id/solutionPrecautions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/text_headline"
+                android:textSize="13sp"
+                tools:text="@tools:sample/lorem"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diseaseSimilarImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/other_diseases"
+            android:textColor="#020617"
+            android:textSize="@dimen/_16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/similarImagesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diseaseVideoArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Video hướng dẫn"
+            android:textColor="#020617"
+            android:textSize="@dimen/_16sp" />
+
+        <LinearLayout
+            android:id="@+id/videoList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+</LinearLayout>

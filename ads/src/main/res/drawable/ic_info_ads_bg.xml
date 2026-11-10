@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F0F0F0" />
+            <corners android:topRightRadius="10dp" />
+        </shape>
+    </item>
+    <item
+        android:bottom="2dp"
+        android:drawable="@drawable/ic_info_ads"
+        android:end="2dp"
+        android:gravity="center"
+        android:left="2dp"
+        android:top="2dp" />
+</layer-list>

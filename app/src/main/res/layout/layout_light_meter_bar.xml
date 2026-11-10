@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_light_meter_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/shape_rectangle_light_meter_bar_gradient"
+        app:layout_constraintBottom_toBottomOf="@id/view_light_meter_bar_line"
+        app:layout_constraintTop_toTopOf="@id/view_light_meter_bar_line" />
+
+    <View
+        android:id="@+id/view_light_meter_bar_bg_running_place"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/view_light_meter_bar_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_light_meter_bar_bg"
+        app:layout_constraintStart_toStartOf="@id/view_light_meter_bar_bg"
+        app:layout_constraintTop_toTopOf="@id/view_light_meter_bar_bg" />
+
+    <View
+        android:id="@+id/view_light_meter_bar_line"
+        android:layout_width="4dp"
+        android:layout_height="20dp"
+        android:background="@drawable/shape_rectangle_primary_orange_bg_corner_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/view_light_meter_bar_bg_running_place"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/view_light_meter_bar_bg_running_place" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="4dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_polygon_light_meter"
+        app:layout_constraintBottom_toTopOf="@id/view_light_meter_bar_line"
+        app:layout_constraintEnd_toEndOf="@id/view_light_meter_bar_line"
+        app:layout_constraintStart_toStartOf="@id/view_light_meter_bar_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

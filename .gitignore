@@ -1,0 +1,31 @@
+*.iml
+.gradle
+local.properties
+.idea/
+.kotlin/
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+
+# Android Build files & caches
+build/
+**/build/
+captures/
+.externalNativeBuild
+.cxx
+
+# iOS Build files & caches
+DerivedData/
+**/DerivedData/
+*.xcuserstate
+project.xcworkspace/xcuserdata/
+xcuserdata/
+Pods/
+
+# Project temporary / generation folders
+.codex-slide-build/
+.codex-slide-inspect/
+.codex-video-build/
+.slide-source*/
+.venv*/
+output/

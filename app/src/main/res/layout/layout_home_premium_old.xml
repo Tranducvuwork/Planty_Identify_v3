@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPremium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_premium_banner_old"
+        android:minHeight="112dp"
+        android:paddingStart="@dimen/_8dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="@dimen/_8dp"
+        android:paddingBottom="24dp">
+
+        <ImageView
+            android:id="@+id/ivBuyPremium"
+            android:layout_width="210dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/bg_try_pro_old"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPremiumPlant"
+            android:layout_width="115dp"
+            android:layout_height="108dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/bg_tree_notification_old"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

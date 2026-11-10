@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2dp"
+        android:outlineProvider="none"
+        app:cardBackgroundColor="#E6F3DE"
+        app:cardCornerRadius="@dimen/_10dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_14dp"
+            android:paddingTop="@dimen/_10dp"
+            android:paddingEnd="@dimen/_12dp"
+            android:paddingBottom="@dimen/_10dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="1"
+                android:textColor="@color/text_color_main"
+                android:textSize="@dimen/_14sp"
+                tools:text="@tools:sample/lorem/random" />
+
+            <ImageView
+                android:layout_width="@dimen/_18dp"
+                android:layout_height="@dimen/_18dp"
+                android:layout_marginStart="@dimen/_8dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_add_suggest" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_vertical"
+        android:paddingVertical="3dp">
+
+        <ImageView
+            android:id="@+id/ivCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/selector_checkbox_feedback" />
+
+        <ImageView
+            android:id="@+id/ivEmoji"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="12dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="2dp"
+            android:clickable="false"
+            android:focusable="false"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:fontFamily="@font/poppins"
+            android:maxLines="2"
+            android:textColor="@color/text_headline"
+            android:textSize="14sp"
+            tools:text="@tools:sample/lorem" />
+
+    </LinearLayout>
+</layout>
+

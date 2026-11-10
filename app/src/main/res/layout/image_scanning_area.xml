@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/scan_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginHorizontal="@dimen/_50dp"
+        android:src="@drawable/ic_scanning_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/crop_plant_image_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/scan_frame"
+        app:layout_constraintEnd_toEndOf="@id/scan_frame"
+        app:layout_constraintStart_toStartOf="@id/scan_frame"
+        app:layout_constraintTop_toTopOf="@id/scan_frame">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivPlantImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="24dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
+    </FrameLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/scanning_animation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginHorizontal="@dimen/_50dp"
+        app:layout_constraintBottom_toBottomOf="@id/scan_frame"
+        app:layout_constraintEnd_toEndOf="@id/scan_frame"
+        app:layout_constraintStart_toStartOf="@id/scan_frame"
+        app:layout_constraintTop_toTopOf="@id/scan_frame"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim_plant_processing" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

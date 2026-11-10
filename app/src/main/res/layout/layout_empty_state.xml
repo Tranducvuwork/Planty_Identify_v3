@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutEmpty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivEmpty"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:alpha="0.55"
+        android:src="@drawable/ic_camera_home"
+        android:tint="#9E9E9E" />
+
+    <TextView
+        android:id="@+id/tvEmptyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        tools:text="Chưa có dữ liệu" />
+
+    <TextView
+        android:id="@+id/tvEmptyMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:textColor="#888888"
+        android:textSize="13sp"
+        tools:text="Mô tả trạng thái trống" />
+</LinearLayout>

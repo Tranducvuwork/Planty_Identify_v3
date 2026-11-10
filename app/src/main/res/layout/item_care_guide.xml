@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_round_12_white"
+    android:padding="16dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivPlantImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:riv_corner_radius="@dimen/_8dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_round_8_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_camera_home" />
+
+    <TextView
+        android:id="@+id/tvPlantName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/icArrow"
+        app:layout_constraintStart_toEndOf="@+id/ivPlantImage"
+        app:layout_constraintTop_toTopOf="@+id/ivPlantImage"
+        tools:text="Monstera" />
+
+    <TextView
+        android:id="@+id/tvScientificName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/icArrow"
+        app:layout_constraintStart_toStartOf="@+id/tvPlantName"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlantName"
+        tools:text="Monstera deliciosa" />
+
+    <TextView
+        android:id="@+id/tvCareInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/icArrow"
+        app:layout_constraintStart_toStartOf="@+id/tvPlantName"
+        app:layout_constraintTop_toBottomOf="@+id/tvScientificName"
+        tools:text="☀ Bright indirect light • 💧 Weekly" />
+
+    <ImageView
+        android:id="@+id/icArrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_arrow_right_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

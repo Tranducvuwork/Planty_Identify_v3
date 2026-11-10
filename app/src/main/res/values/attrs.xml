@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NativeAdView">
+        <attr name="adView" format="reference" />
+        <attr name="adShimmer" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="trimExpandedText" format="string" />
+        <attr name="trimCollapsedText" format="string" />
+        <attr name="trimLength" format="integer" />
+        <attr name="showTrimExpandedText" format="boolean" />
+        <attr name="colorClickableText" format="color" />
+        <attr name="trimLines" format="integer" />
+        <attr name="trimMode">
+            <enum name="trimModeLine" value="0" />
+            <enum name="trimModeLength" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ActionBarView">
+        <attr name="abv_icon_left" format="reference" />
+        <attr name="abv_show_icon_left" format="boolean" />
+        <attr name="abv_text_title" format="string" />
+        <attr name="abv_show_text_title" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="LightMeterBarView">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="StrokeTextView">
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeStartColor" format="color" />
+        <attr name="strokeEndColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="fillColor" format="color" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowRadius" format="dimension" />
+        <attr name="shadowDx" format="dimension" />
+        <attr name="shadowDy" format="dimension" />
+    </declare-styleable>
+</resources>

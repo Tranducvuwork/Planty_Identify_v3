@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/description"
+        android:textColor="#020617"
+        android:textSize="@dimen/_16sp" />
+
+    <com.expeditee.plant.identifier.utils.ReadMoreTextView
+        android:id="@+id/plant_desc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:background="@drawable/plant_info_card_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="14dp"
+        android:textColor="@color/text_headline"
+        android:textSize="@dimen/_14sp"
+        app:trimLines="4"
+        tools:text="Mint Rust is a fungal disease that primarily affects plants in the mint family..." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/plant_detail_scientific_classification"
+        android:textColor="#020617"
+        android:textSize="@dimen/_16sp" />
+
+    <LinearLayout
+        android:id="@+id/taxonomy_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:background="@drawable/plant_info_card_shape"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/family_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/plant_detail_family"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/text_headline"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/family_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:gravity="end"
+                android:textColor="#020617"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="14sp"
+                tools:text="Lamiaceae" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#D9D9D9" />
+
+        <LinearLayout
+            android:id="@+id/genus_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/plant_detail_genus"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/text_headline"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/genus_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:gravity="end"
+                android:textColor="#020617"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_semibold"
+                tools:text="Mentha" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/species_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#D9D9D9" />
+
+        <LinearLayout
+            android:id="@+id/species_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/plant_detail_species"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/text_headline"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/species_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:gravity="end"
+                android:textColor="#020617"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_semibold"
+                tools:text="Mentha spicata" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/type_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#D9D9D9" />
+
+        <LinearLayout
+            android:id="@+id/type_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/plant_detail_type"
+                android:textColor="#004040"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:gravity="end"
+                android:textColor="#020617"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_semibold"
+                tools:text="Herb" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/origin_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#D9D9D9" />
+
+        <LinearLayout
+            android:id="@+id/origin_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/origin"
+                android:textColor="#004040"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/origin_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:gravity="end"
+                android:textColor="#020617"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_semibold"
+                tools:text="Europe, Asia" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

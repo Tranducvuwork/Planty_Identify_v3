@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pop_up"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llCelsius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_16dp"
+            android:paddingVertical="@dimen/_14dp">
+
+            <TextView
+                android:id="@+id/tvCelsius"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/celsius"
+                android:textColor="@color/gray_700"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivCelsius"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_radio_unchecked_gray" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llFahrenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_16dp"
+            android:paddingVertical="@dimen/_14dp">
+
+            <TextView
+                android:id="@+id/tvFahrenheit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/fahrenheit"
+                android:textColor="@color/gray_700"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivFahrenheit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_radio_unchecked_gray" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

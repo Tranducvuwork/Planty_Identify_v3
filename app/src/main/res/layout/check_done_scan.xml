@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rowEnhance"
+        style="@style/ScanProcessingStepRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animEnhance"
+            style="@style/ScanProcessingStepIcon"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/anim_check_done" />
+
+        <TextView
+            android:id="@+id/tvEnhance"
+            style="@style/ScanProcessingStepText"
+            android:text="@string/scan_step_enhancing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowAnalyze"
+        style="@style/ScanProcessingStepRow"
+        android:layout_marginTop="@dimen/_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/rowEnhance"
+        app:layout_constraintTop_toBottomOf="@id/rowEnhance">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animAnalyze"
+            style="@style/ScanProcessingStepIcon"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/anim_check_done" />
+
+        <TextView
+            android:id="@+id/tvAnalyze"
+            style="@style/ScanProcessingStepText"
+            android:text="@string/scan_step_analyzing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowIdentify"
+        style="@style/ScanProcessingStepRow"
+        android:layout_marginTop="@dimen/_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/rowAnalyze"
+        app:layout_constraintTop_toBottomOf="@id/rowAnalyze">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animIdentify"
+            style="@style/ScanProcessingStepIcon"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/anim_check_done" />
+
+        <TextView
+            android:id="@+id/tvIdentify"
+            style="@style/ScanProcessingStepText"
+            android:text="@string/scan_step_identifying" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowResearch"
+        style="@style/ScanProcessingStepRow"
+        android:layout_marginTop="@dimen/_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/rowIdentify"
+        app:layout_constraintTop_toBottomOf="@id/rowIdentify">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animResearch"
+            style="@style/ScanProcessingStepIcon"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/anim_check_done" />
+
+        <TextView
+            android:id="@+id/tvResearch"
+            style="@style/ScanProcessingStepText"
+            android:text="@string/scan_step_researching" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowPrepare"
+        style="@style/ScanProcessingStepRow"
+        android:layout_marginTop="@dimen/_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/rowResearch"
+        app:layout_constraintTop_toBottomOf="@id/rowResearch">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animPrepare"
+            style="@style/ScanProcessingStepIcon"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/anim_check_done" />
+
+        <TextView
+            android:id="@+id/tvPrepare"
+            style="@style/ScanProcessingStepText"
+            android:text="@string/scan_step_preparing_result" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

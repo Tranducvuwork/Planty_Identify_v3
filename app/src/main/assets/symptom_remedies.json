@@ -1,0 +1,627 @@
+{
+  "disclaimer": "Đây là dự đoán theo triệu chứng, tốt nhất người bệnh nên đến BS y học cổ truyền hoặc chuyên khoa để thăm khám tốt hơn.",
+  "intents": [
+    {
+      "id": "dau-bung",
+      "title": "Đau bụng",
+      "triggers": [
+        "tôi bị đau bụng",
+        "toi bi dau bung",
+        "đau bụng",
+        "dau bung",
+        "đau dạ dày",
+        "dau da day",
+        "đau bao tử",
+        "kho tieu",
+        "khó tiêu",
+        "đầy hơi"
+      ],
+      "questions": [
+        "Đau âm ỉ sau ăn hay đau từng cơn?",
+        "Đau quanh rốn, thượng vị hay lan cả bụng?",
+        "Có đầy hơi, ợ chua kèm theo không?",
+        "Đã ăn gì lạ / chua / cay trước đó?",
+        "Có sốt, nôn ói hay tiêu chảy không?",
+        "Đau nhẹ hay khiến phải nằm?",
+        "Có bệnh dạ dày / trào ngược sẵn không?",
+        "Muốn xem gợi ý dân gian hỗ trợ nhẹ?"
+      ],
+      "remedyIds": [
+        "nghe-tieu",
+        "la-lot-tieu",
+        "sa-nhan-tieu",
+        "gung-am-bung"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "so-mui",
+      "title": "Sổ mũi",
+      "triggers": [
+        "sổ mũi",
+        "so mui",
+        "chảy mũi",
+        "cam so mui",
+        "nước mũi"
+      ],
+      "questions": [
+        "Mũi chảy trong hay đặc vàng?",
+        "Có hắt hơi, ngứa mũi không?",
+        "Kèm ớn lạnh hoặc đau họng không?",
+        "Kéo dài dưới 3 ngày hay lâu hơn?",
+        "Có nghẹt mũi khi nằm không?",
+        "Trẻ nhỏ hay người lớn?",
+        "Có dị ứng thời tiết / bụi không?",
+        "Muốn xem cách hỗ trợ dân gian?"
+      ],
+      "remedyIds": [
+        "cam-sa-gung",
+        "tia-to-cam",
+        "bac-ha-ho",
+        "hung-chanh-mui"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "nhuc-dau",
+      "title": "Nhức đầu",
+      "triggers": [
+        "nhức đầu",
+        "nhuc dau",
+        "đau đầu",
+        "dau dau"
+      ],
+      "questions": [
+        "Đau một bên hay cả đầu?",
+        "Đau nhẹ do mệt hay đau dữ dội?",
+        "Có chóng mặt, buồn nôn kèm không?",
+        "Có mất ngủ / nhìn màn hình lâu không?",
+        "Đau tăng khi cúi, ho hay ánh sáng?",
+        "Đã uống nước, nghỉ ngơi chưa?",
+        "Có huyết áp cao sẵn không?",
+        "Muốn xem gợi ý hỗ trợ nhẹ?"
+      ],
+      "remedyIds": [
+        "bac-ha-ho",
+        "tia-to-cam",
+        "ngai-cuu-chuom",
+        "trau-khong-dau"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "met-moi",
+      "title": "Mệt mỏi",
+      "triggers": [
+        "mệt mỏi",
+        "met moi",
+        "uể oải",
+        "ue oai",
+        "mệt",
+        "met"
+      ],
+      "questions": [
+        "Mệt sau làm việc hay kéo dài nhiều ngày?",
+        "Có mất ngủ, kém ăn không?",
+        "Có ớn lạnh hay sốt nhẹ không?",
+        "Uể oải buổi sáng hay cả ngày?",
+        "Có uống đủ nước chưa?",
+        "Làm việc trí óc nhiều hay chân tay?",
+        "Có bệnh nền / thiếu máu đã biết không?",
+        "Muốn xem gợi ý dân gian bồi bổ nhẹ?"
+      ],
+      "remedyIds": [
+        "cam-sa-gung",
+        "que-am",
+        "rau-ma-mat",
+        "long-nhan-ngu",
+        "dinh-lang-bo"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "dau-lung",
+      "title": "Đau lưng",
+      "triggers": [
+        "đau lưng",
+        "dau lung",
+        "nhức lưng",
+        "nhuc lung",
+        "đau cột sống"
+      ],
+      "questions": [
+        "Đau sau ngồi lâu / mang vác?",
+        "Đau thắt lưng hay lan vai?",
+        "Có lan xuống chân, tê bì không?",
+        "Đau tăng khi cúi hay khi đứng lâu?",
+        "Đã chườm ấm / nghỉ chưa?",
+        "Có bí tiểu hoặc yếu chân không?",
+        "Đau mới vài ngày hay tái phát?",
+        "Muốn xem cách chườm / xoa dân gian?"
+      ],
+      "remedyIds": [
+        "ngai-cuu-chuom",
+        "gung-xoa-lung",
+        "la-lot-chuom"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "ho",
+      "title": "Ho",
+      "triggers": [
+        "ho",
+        "ho khan",
+        "ho có đờm",
+        "ho dem",
+        "ho đêm"
+      ],
+      "questions": [
+        "Ho khan hay ho có đờm?",
+        "Ho ban ngày hay về đêm?",
+        "Kèm đau họng, sổ mũi không?",
+        "Ho bao lâu rồi?",
+        "Có sốt, khó thở không?",
+        "Đờm trong, vàng hay xanh?",
+        "Trẻ nhỏ hay người lớn?",
+        "Muốn xem gợi ý dịu họng dân gian?"
+      ],
+      "remedyIds": [
+        "hung-chanh-ho",
+        "bac-ha-ho",
+        "tia-to-cam",
+        "hung-chanh-mui"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "dau-hong",
+      "title": "Đau họng",
+      "triggers": [
+        "đau họng",
+        "dau hong",
+        "rát họng",
+        "khàn tiếng",
+        "khan tieng"
+      ],
+      "questions": [
+        "Rát họng khi nuốt không?",
+        "Khàn tiếng hay chỉ khô họng?",
+        "Kèm ho, sổ mũi không?",
+        "Có sốt, nổi hạch cổ không?",
+        "Uống nước ấm đã dễ hơn chưa?",
+        "Nói nhiều / hát nhiều hôm nay?",
+        "Kéo dài dưới 3 ngày?",
+        "Muốn xem trà thảo mộc hỗ trợ?"
+      ],
+      "remedyIds": [
+        "bac-ha-ho",
+        "hung-chanh-ho",
+        "tia-to-cam"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "cam-lanh",
+      "title": "Cảm lạnh",
+      "triggers": [
+        "cảm",
+        "cam lanh",
+        "cảm lạnh",
+        "ớn lạnh",
+        "on lanh",
+        "cảm cúm nhẹ"
+      ],
+      "questions": [
+        "Có ớn lạnh, sốt nhẹ không?",
+        "Kèm sổ mũi hay nghẹt mũi?",
+        "Người mệt, đau mình không?",
+        "Mới bị mưa / lạnh gió?",
+        "Đã ủ ấm, uống nước chưa?",
+        "Có khó thở hay sốt cao không?",
+        "Trẻ em, phụ nữ mang thai?",
+        "Muốn xem nước sả gừng / xông nhẹ?"
+      ],
+      "remedyIds": [
+        "cam-sa-gung",
+        "tia-to-cam",
+        "kinh-gioi-xong",
+        "que-am"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "mat-ngu",
+      "title": "Mất ngủ",
+      "triggers": [
+        "mất ngủ",
+        "mat ngu",
+        "khó ngủ",
+        "kho ngu",
+        "mất ngủ đêm"
+      ],
+      "questions": [
+        "Khó vào giấc hay thức giữa đêm?",
+        "Mất ngủ mấy đêm liền?",
+        "Có lo âu, căng thẳng không?",
+        "Uống cà phê / trà muộn không?",
+        "Nằm xem điện thoại trước ngủ?",
+        "Có đau đầu, mệt kèm không?",
+        "Đã thử giờ ngủ cố định chưa?",
+        "Muốn xem gợi ý dân gian ngủ nghỉ?"
+      ],
+      "remedyIds": [
+        "long-nhan-ngu",
+        "bac-ha-ho",
+        "trau-khong-dau"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "day-hoi",
+      "title": "Đầy hơi, khó tiêu",
+      "triggers": [
+        "đầy hơi",
+        "day hoi",
+        "khó tiêu",
+        "kho tieu",
+        "chướng bụng",
+        "chuong bung",
+        "ợ hơi"
+      ],
+      "questions": [
+        "Đầy bụng sau ăn no?",
+        "Ợ hơi, ợ chua có không?",
+        "Ăn nhanh / đồ dầu mỡ không?",
+        "Đau thượng vị kèm theo?",
+        "Đi ngoài bình thường hay táo?",
+        "Uống nước đá nhiều không?",
+        "Có loét dạ dày đã biết?",
+        "Muốn xem gợi ý ấm bụng dân gian?"
+      ],
+      "remedyIds": [
+        "nghe-tieu",
+        "sa-nhan-tieu",
+        "gung-am-bung",
+        "la-lot-tieu",
+        "la-lot-giam"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "nong-trong",
+      "title": "Nóng trong, giải nhiệt",
+      "triggers": [
+        "nóng trong",
+        "nong trong",
+        "giải nhiệt",
+        "giai nhiet",
+        "nhiệt miệng",
+        "nhiet mieng",
+        "mụn nhiệt"
+      ],
+      "questions": [
+        "Cảm giác nóng người, khát nước?",
+        "Có nhiệt miệng, mụn nhiệt không?",
+        "Da nổi mụn hay ngứa nhẹ?",
+        "Trời nóng / ăn cay nhiều?",
+        "Nước tiểu vàng sẫm không?",
+        "Bụng lạnh, tiêu chảy sẵn không?",
+        "Muốn uống mát hay chỉ rửa mặt?",
+        "Xem gợi ý rau má / lá vối?"
+      ],
+      "remedyIds": [
+        "rau-ma-mat",
+        "muop-dang-mat",
+        "la-voi-tra"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "da-kich-ung",
+      "title": "Da kích ứng, bỏng nhẹ",
+      "triggers": [
+        "da kích ứng",
+        "kich ung da",
+        "bỏng nhẹ",
+        "bong nhe",
+        "da khô",
+        "da kho",
+        "rát da"
+      ],
+      "questions": [
+        "Da đỏ, rát hay khô bong?",
+        "Bỏng nông do nước / nắng?",
+        "Có mụn nước, chảy dịch không?",
+        "Vùng da hở hay kín quần áo?",
+        "Đã thử kem lạ chưa?",
+        "Ngứa nhiều hay chỉ rát?",
+        "Diện tích nhỏ hơn bàn tay?",
+        "Muốn xem gel nha đam đắp ngoài?"
+      ],
+      "remedyIds": [
+        "nha-dam-da",
+        "co-nho-noi"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "dau-khop",
+      "title": "Đau nhức khớp",
+      "triggers": [
+        "đau khớp",
+        "dau khop",
+        "nhức xương",
+        "nhuc xuong",
+        "đau gối",
+        "đau tay chân"
+      ],
+      "questions": [
+        "Đau gối, vai hay cổ tay?",
+        "Đau khi vận động hay lúc nghỉ?",
+        "Có sưng, nóng khớp không?",
+        "Trời lạnh thì tăng đau?",
+        "Đã chườm ấm chưa?",
+        "Đau một khớp hay nhiều chỗ?",
+        "Có cứng khớp buổi sáng không?",
+        "Muốn xem cách chườm ngải / gừng?"
+      ],
+      "remedyIds": [
+        "ngai-cuu-chuom",
+        "gung-xoa-lung",
+        "la-lot-chuom"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "nghet-mui",
+      "title": "Nghẹt mũi",
+      "triggers": [
+        "nghẹt mũi",
+        "nghet mui",
+        "tắc mũi",
+        "tac mui",
+        "khó thở mũi"
+      ],
+      "questions": [
+        "Nghẹt một bên hay hai bên?",
+        "Nặng hơn khi nằm?",
+        "Có sổ mũi kèm không?",
+        "Mới cảm / dị ứng không?",
+        "Đã xông hơi nước ấm chưa?",
+        "Có đau mặt, trán không?",
+        "Trẻ nhỏ hay người lớn?",
+        "Muốn xem xông húng chanh / kinh giới?"
+      ],
+      "remedyIds": [
+        "hung-chanh-mui",
+        "kinh-gioi-xong",
+        "cam-sa-gung"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "tieu-buot",
+      "title": "Tiểu buốt nhẹ",
+      "triggers": [
+        "tiểu buốt",
+        "tieu buot",
+        "tiểu rắt",
+        "tieu rat",
+        "khó tiểu",
+        "kho tieu nuoc",
+        "nóng tiểu"
+      ],
+      "questions": [
+        "Buốt khi tiểu hay tiểu rắt?",
+        "Nước tiểu vàng sẫm / có mùi?",
+        "Uống nước ít trong ngày?",
+        "Có sốt, đau lưng hai bên không?",
+        "Tiểu ra máu nhìn thấy không?",
+        "Nam hay nữ, mang thai không?",
+        "Mới vài giờ hay vài ngày?",
+        "Muốn xem gợi ý dân gian lợi tiểu nhẹ?"
+      ],
+      "remedyIds": [
+        "ma-de-loi-tieu",
+        "rau-ma-mat",
+        "la-voi-tra"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "chong-mat",
+      "title": "Chóng mặt nhẹ",
+      "triggers": [
+        "chóng mặt",
+        "chong mat",
+        "hoa mắt",
+        "hoa mat",
+        "choáng váng"
+      ],
+      "questions": [
+        "Choáng khi đứng dậy đột ngột?",
+        "Kèm nhức đầu, mệt không?",
+        "Đã ăn uống đủ chưa?",
+        "Thiếu ngủ hay căng thẳng?",
+        "Có nôn, ù tai không?",
+        "Huyết áp cao / thấp đã biết?",
+        "Xảy ra lúc ngồi yên hay quay đầu?",
+        "Muốn xem gợi ý nghỉ ngơi hỗ trợ?"
+      ],
+      "remedyIds": [
+        "bac-ha-ho",
+        "trau-khong-dau",
+        "long-nhan-ngu",
+        "rau-ma-mat"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "tao-bon",
+      "title": "Táo bón nhẹ",
+      "triggers": [
+        "táo bón",
+        "tao bon",
+        "khó đi ngoài",
+        "kho di ngoai",
+        "táo"
+      ],
+      "questions": [
+        "Mấy ngày chưa đi ngoài?",
+        "Phân cứng, rặn nhiều không?",
+        "Uống nước / ăn rau ít?",
+        "Ngồi nhiều, ít vận động?",
+        "Có đau bụng quặn không?",
+        "Trẻ em hay người lớn?",
+        "Đang dùng thuốc gây táo không?",
+        "Muốn xem gợi ý dân gian hỗ trợ nhẹ?"
+      ],
+      "remedyIds": [
+        "rau-ma-mat",
+        "la-lot-giam",
+        "muop-dang-mat"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "tieu-chay",
+      "title": "Tiêu chảy nhẹ",
+      "triggers": [
+        "tiêu chảy",
+        "tieu chay",
+        "đi ngoài lỏng",
+        "di ngoai long",
+        "rối loạn tiêu hóa"
+      ],
+      "questions": [
+        "Đi ngoài lỏng mấy lần/ngày?",
+        "Có sốt, nôn ói không?",
+        "Ăn gì lạ / sống trước đó?",
+        "Khát, mệt, mắt trũng không?",
+        "Đau bụng quặn từng cơn?",
+        "Trẻ nhỏ hay người lớn?",
+        "Đã bù nước điện giải chưa?",
+        "Muốn xem gợi ý dân gian hỗ trợ nhẹ?"
+      ],
+      "remedyIds": [
+        "gung-am-bung",
+        "la-lot-tieu",
+        "que-am"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "vet-tray",
+      "title": "Vết trầy nhẹ",
+      "triggers": [
+        "vết trầy",
+        "vet tray",
+        "xước da",
+        "xuoc da",
+        "trầy da",
+        "chảy máu nhẹ"
+      ],
+      "questions": [
+        "Vết nông, chỉ trầy da?",
+        "Còn đất cát / bẩn không?",
+        "Chảy máu đã cầm chưa?",
+        "Sưng đỏ lan rộng không?",
+        "Đã rửa sạch nước không?",
+        "Có dị ứng thảo mộc ngoài da?",
+        "Vết sâu / mủ thì cần khám?",
+        "Muốn xem cách đắp dân gian nhẹ?"
+      ],
+      "remedyIds": [
+        "nha-dam-da",
+        "co-nho-noi"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "dau-vai-gay",
+      "title": "Đau vai gáy",
+      "triggers": [
+        "đau vai",
+        "dau vai",
+        "đau gáy",
+        "dau gay",
+        "mỏi cổ",
+        "moi co",
+        "vai gáy"
+      ],
+      "questions": [
+        "Mỏi sau ngồi máy tính lâu?",
+        "Đau một bên vai hay cả gáy?",
+        "Có tê tay, chóng mặt không?",
+        "Cổ cứng, khó quay không?",
+        "Đã xoa ấm / nghỉ chưa?",
+        "Đau lan xuống cánh tay?",
+        "Mới vài giờ hay nhiều ngày?",
+        "Muốn xem chườm ngải / gừng?"
+      ],
+      "remedyIds": [
+        "ngai-cuu-chuom",
+        "gung-xoa-lung",
+        "la-lot-chuom"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "ngua-da",
+      "title": "Ngứa da",
+      "triggers": [
+        "ngứa da",
+        "ngua da",
+        "mẩn ngứa",
+        "man ngua",
+        "nổi mẩn",
+        "di ứng da"
+      ],
+      "questions": [
+        "Ngứa cục bộ hay lan nhiều chỗ?",
+        "Có mẩn đỏ, mề đay không?",
+        "Mới ăn lạ / thuốc mới?",
+        "Ngứa tăng về đêm không?",
+        "Da khô hay có dịch?",
+        "Sốt, khó thở kèm theo?",
+        "Đã gãi làm xước chưa?",
+        "Muốn xem gợi ý dịu da dân gian?"
+      ],
+      "remedyIds": [
+        "nha-dam-da",
+        "rau-ma-mat"
+      ],
+      "questionHints": []
+    },
+    {
+      "id": "an-khong-ngon",
+      "title": "Ăn không ngon",
+      "triggers": [
+        "ăn không ngon",
+        "an khong ngon",
+        "chán ăn",
+        "chan an",
+        "kém ăn",
+        "kem an"
+      ],
+      "questions": [
+        "Chán ăn mấy ngày?",
+        "Kèm đầy bụng, khó tiêu?",
+        "Có sốt, mệt, mất ngủ?",
+        "Miệng đắng hay khô?",
+        "Stress / thay đổi giờ ăn?",
+        "Trẻ em hay người lớn?",
+        "Sụt cân rõ trong tuần?",
+        "Muốn xem gợi ý dân gian hỗ trợ ăn?"
+      ],
+      "remedyIds": [
+        "nghe-tieu",
+        "sa-nhan-tieu",
+        "dinh-lang-bo",
+        "gung-am-bung"
+      ],
+      "questionHints": []
+    }
+  ]
+}

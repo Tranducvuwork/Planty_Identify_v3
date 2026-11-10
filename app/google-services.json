@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "594566191520",
+    "project_id": "expeditee-plant-scan-kotlin",
+    "storage_bucket": "expeditee-plant-scan-kotlin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594566191520:android:55eeeccfc55b60e2d56cc5",
+        "android_client_info": {
+          "package_name": "com.expeditee.planty.identifier"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3B6GEbgBJh7Adj7NuqxAqiHdB7CurxHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

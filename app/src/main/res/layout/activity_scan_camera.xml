@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <FrameLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingHorizontal="@dimen/_12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_margin="@dimen/_4dp"
+                android:src="@drawable/ic_close_camera"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvScanCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_round_16_white"
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:textColor="@color/primary"
+                android:textSize="13sp"
+                tools:text="1/2 scans" />
+
+            <ImageView
+                android:id="@+id/ivFlash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_margin="@dimen/_4dp"
+                android:src="@drawable/ic_flash_off"
+                tools:ignore="ContentDescription" />
+
+        </FrameLayout>
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/camPreviewView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="30dp"
+            app:implementationMode="compatible"
+            app:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@id/layoutModeTabs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <com.expeditee.plant.identifier.presenter.camera.FocusCircleView
+            android:id="@+id/focusView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/camPreviewView"
+            app:layout_constraintEnd_toEndOf="@id/camPreviewView"
+            app:layout_constraintStart_toStartOf="@id/camPreviewView"
+            app:layout_constraintTop_toTopOf="@id/camPreviewView" />
+
+        <ImageView
+            android:id="@+id/focus_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_focus_area"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/layoutModeTabs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:id="@+id/layoutModeTabs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="74dp"
+            android:layout_marginBottom="@dimen/_24dp"
+            android:background="@drawable/bg_camera_mode_tabs"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_8dp"
+            android:paddingVertical="@dimen/_4dp"
+            app:layout_constraintBottom_toTopOf="@id/ivCapture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/btnTabIdentify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_6dp"
+                android:text="@string/identify"
+                android:textAllCaps="true"
+                android:textColor="@color/text_camera_mode_muted"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btnTabDiagnose"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_6dp"
+                android:text="@string/diagnose"
+                android:textAllCaps="true"
+                android:textColor="@color/text_camera_mode_muted"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivCapture"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="@dimen/_32dp"
+            android:src="@drawable/ic_capture_identify"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/ivGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_60dp"
+            android:src="@drawable/ic_gallery"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCapture"
+            app:layout_constraintEnd_toStartOf="@+id/ivCapture"
+            app:layout_constraintTop_toTopOf="@+id/ivCapture"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/ivSwitchMode"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="@dimen/_60dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_legacy_iap_uncheck"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCapture"
+            app:layout_constraintStart_toEndOf="@+id/ivCapture"
+            app:layout_constraintTop_toTopOf="@+id/ivCapture"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvScanMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/mode_online"
+            android:textColor="@color/primary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/ivSwitchMode"
+            app:layout_constraintStart_toStartOf="@+id/ivSwitchMode"
+            app:layout_constraintTop_toBottomOf="@+id/ivSwitchMode" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/flChat"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_ai_chat_fab"
+            android:clickable="true"
+            android:elevation="@dimen/_100dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/anim_chat_bot" />
+        </FrameLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_24dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:minHeight="200dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:contentDescription="@null"
+                        android:importantForAccessibility="no"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bg_home_header" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_10dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <include
+                                android:id="@+id/weather_home_area"
+                                layout="@layout/weather_home_area"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="16dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginHorizontal="@dimen/_20dp"
+                        android:layout_marginBottom="20dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="28dp"
+                        app:cardElevation="@dimen/_4dp"
+                        app:strokeColor="#14000000"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="51dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/_16dp"
+                            android:paddingEnd="8dp">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/etSearchPlants"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:autofillHints="no"
+                                android:background="@android:color/transparent"
+                                android:drawableStart="@drawable/ic_search_home"
+                                android:drawablePadding="@dimen/_12dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:gravity="center_vertical"
+                                android:hint="Bạn muốn tìm hiểu về cây gì?"
+                                android:imeOptions="actionSearch"
+                                android:inputType="textCapWords"
+                                android:paddingEnd="8dp"
+                                android:textColor="@color/text_edit_text"
+                                android:textColorHint="@color/home_search_hint"
+                                android:textSize="@dimen/_14sp" />
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/btnVoiceSearch"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:contentDescription="Tìm kiếm bằng giọng nói"
+                                android:src="@android:drawable/ic_btn_speak_now"
+                                app:tint="@color/primary_green" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </FrameLayout>
+
+                <include
+                    android:id="@+id/layoutPremiumNew"
+                    layout="@layout/layout_home_premium_new"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="@dimen/_16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp" />
+
+                <include
+                    android:id="@+id/layoutPremiumOld"
+                    layout="@layout/layout_home_premium_old"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="@dimen/_8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp" />
+
+                <include
+                    android:id="@+id/layoutThesisExtras"
+                    layout="@layout/layout_home_thesis_extras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_18dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/all_features"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:textColor="@color/text_main_color"
+                    android:textSize="@dimen/_20sp" />
+
+                <include
+                    android:id="@+id/layoutFeaturesNew"
+                    layout="@layout/layout_home_features"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    android:id="@+id/layoutFeaturesOld"
+                    layout="@layout/layout_home_features_old"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

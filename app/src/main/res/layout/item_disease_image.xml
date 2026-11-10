@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivDiseaseImage"
+            android:layout_width="96dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_result_image_card"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvDiseaseImageTitle"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:maxLines="1"
+            android:textColor="@color/result_text_primary"
+            android:textSize="@dimen/_14sp" />
+    </LinearLayout>
+</layout>

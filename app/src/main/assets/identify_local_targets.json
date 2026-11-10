@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "description": "Cây phổ biến ưu tiên cho model nhận diện offline (TFLite) và catalog thesis_plants.json",
+  "notes": "Thu ảnh lá/thân/hoa theo từng loài, train model mới, rồi cập nhật identify_model_v1.tflite và taxonomy_v1.csv cùng phiên bản.",
+  "targets": [
+    {
+      "plant_id": "cay-bang",
+      "scientific_name": "Terminalia catappa",
+      "common_names": ["Cây bàng", "Bàng", "Tropical almond"],
+      "in_taxonomy": true,
+      "taxonomy_leaf_id": 6278,
+      "priority": "high"
+    },
+    {
+      "plant_id": "phuong-vi",
+      "scientific_name": "Delonix regia",
+      "common_names": ["Phượng vĩ", "Phượng", "Royal poinciana"],
+      "in_taxonomy": true,
+      "taxonomy_leaf_id": 6284,
+      "priority": "high"
+    },
+    {
+      "plant_id": "hoa-giay",
+      "scientific_name": "Bougainvillea glabra",
+      "common_names": ["Hoa giấy", "Bông giấy", "Paper flower"],
+      "in_taxonomy": true,
+      "taxonomy_leaf_id": 14800,
+      "priority": "high"
+    },
+    {
+      "plant_id": "bau",
+      "scientific_name": "Lagenaria siceraria",
+      "common_names": ["Bầu", "Bầu bí", "Bottle gourd"],
+      "in_taxonomy": false,
+      "priority": "high"
+    },
+    {
+      "plant_id": "bi-do",
+      "scientific_name": "Cucurbita maxima",
+      "common_names": ["Bí đỏ", "Bí ngô", "Pumpkin"],
+      "in_taxonomy": true,
+      "taxonomy_leaf_id": 11203,
+      "priority": "high"
+    },
+    {
+      "plant_id": "bi-xanh",
+      "scientific_name": "Benincasa hispida",
+      "common_names": ["Bí xanh", "Bí đao", "Wax gourd"],
+      "in_taxonomy": false,
+      "priority": "high"
+    },
+    {
+      "plant_id": "la-giang",
+      "scientific_name": "Gnetum gnemon",
+      "common_names": ["Lá giang", "Cây giang", "Melinjo"],
+      "in_taxonomy": false,
+      "priority": "high"
+    }
+  ],
+  "medicine_targets": [
+    {
+      "plant_id": "mat-gau",
+      "scientific_name": "Andrographis paniculata",
+      "common_names": ["Cây mật gấu", "Mật gấu", "Xuyên tâm liên"],
+      "in_taxonomy": false,
+      "priority": "high"
+    },
+    {
+      "plant_id": "bo-cong-anh",
+      "scientific_name": "Taraxacum officinale",
+      "common_names": ["Bồ công anh", "Cúc dại", "Dandelion"],
+      "in_taxonomy": true,
+      "taxonomy_leaf_id": 47603,
+      "priority": "high"
+    },
+    {
+      "plant_id": "kim-ngan-hoa",
+      "scientific_name": "Lonicera japonica",
+      "common_names": ["Kim ngân hoa", "Nhẫn đông", "Honeysuckle"],
+      "in_taxonomy": true,
+      "taxonomy_leaf_id": 77835,
+      "priority": "high"
+    },
+    {
+      "plant_id": "hoan-ngoc",
+      "scientific_name": "Hedyotis diffusa",
+      "common_names": ["Hoàn ngọc", "Cây hoàn ngọc", "Oldenlandia diffusa"],
+      "in_taxonomy": false,
+      "priority": "high"
+    },
+    {
+      "plant_id": "tra-xuong-khop",
+      "scientific_name": "Orthosiphon aristatus",
+      "common_names": ["Trà xương khớp", "Cây xương khớp", "Rau mèo"],
+      "in_taxonomy": true,
+      "taxonomy_leaf_id": 185264,
+      "priority": "high"
+    },
+    {
+      "plant_id": "sam-cau",
+      "scientific_name": "Curculigo orchioides",
+      "common_names": ["Sâm cau", "Mạch môn đen"],
+      "in_taxonomy": false,
+      "priority": "medium"
+    },
+    {
+      "plant_id": "cuc-tan",
+      "scientific_name": "Artemisia argyi",
+      "common_names": ["Cúc tần", "Ngải diệp", "Ai diệp"],
+      "in_taxonomy": false,
+      "priority": "high"
+    },
+    {
+      "plant_id": "he",
+      "scientific_name": "Allium tuberosum",
+      "common_names": ["Hẹ", "Cả hẹ", "Garlic chives"],
+      "in_taxonomy": true,
+      "taxonomy_leaf_id": 122343,
+      "priority": "high"
+    },
+    {
+      "plant_id": "dan-sam",
+      "scientific_name": "Salvia miltiorrhiza",
+      "common_names": ["Đan sâm", "Sâm đan", "Danshen"],
+      "in_taxonomy": false,
+      "priority": "high"
+    },
+    {
+      "plant_id": "trinh-nu-hoang-cung",
+      "scientific_name": "Actaea cimicifuga",
+      "common_names": ["Trinh nữ hoàng cung", "Thăng ma", "Cimicifuga foetida"],
+      "in_taxonomy": false,
+      "priority": "medium"
+    }
+  ]
+}
